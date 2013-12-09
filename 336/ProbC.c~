@@ -1,0 +1,9 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+	int N;
+	int MAX=1000000000;
+	//scanf("%d",&N);
+	printf("%d\n",log2(MAX));
+	return 0;
+}
