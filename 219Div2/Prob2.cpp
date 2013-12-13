@@ -1,4 +1,5 @@
 #include<iostream>
+#include<cstdio>
 using namespace std;
 long long getMax(long long Num){
 	long long temp;
@@ -26,12 +27,14 @@ int main(){
 	while(W>0){
 		len=getLength(M);
 		if((max-M)*K*len<=W){
+			printf("In First if\n");
 			count+=(max-M+1);
 			W-=(max-M+1)*len*K;
 			M=max+1;
 			max=max*10+9;
 		}
 		else{
+			printf("In Second if\n");
 			count+=(W/(K*len));
 			break;
 		}
@@ -39,3 +42,4 @@ int main(){
 	cout<<count<<endl;
 	return 0;
 }
+
